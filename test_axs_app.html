@@ -81,7 +81,7 @@
     function onAXSButtonClicked()
     {
       setTimeout(VisitAXSStoreURI, 500);
-      window.location = 'mstationredirect://merchantsec/';
+      window.location = 'mstationredirect://';
       isAxsButtonClicked = true;
     }
 
@@ -93,7 +93,7 @@
 
     function VisitAXSStoreURI() {
       if(isiPhone()){
-        window.location = axs_ios_store_url;
+        window.location = 'mstationredirect://';//axs_ios_store_url;
       }
       else{
         window.location = axs_android_store_url;
